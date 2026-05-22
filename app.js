@@ -99,8 +99,8 @@ const aClr = document.querySelector("#redTeam");
 const bClr = document.querySelector("#blueTeam");
 
 const resetName = () => {
-    aName.innerText = "Team A";
-    bName.innerText = "Team B";
+    aName.innerText = "";
+    bName.innerText = "";
     redName.value = "";
     blueName.value = "";
     aClr.style.backgroundColor = "#cd2424";
@@ -108,8 +108,8 @@ const resetName = () => {
 };
 
 const setName = () => {
-    aName.innerText = redName.value || "Team A";
-    bName.innerText = blueName.value || "Team B";
+    aName.innerText = redName.value;
+    bName.innerText = blueName.value;
     aClr.style.backgroundColor = redClr.value;
     bClr.style.backgroundColor = blueClr.value;
     navToggle();
