@@ -4,7 +4,7 @@
   "description": "ScoreCounter is a functional score counter for volleyball games. ScoreCounter 是一個可存取紀錄、客製隊伍資訊的多功能球類運動記分板。",
   "start_url": "./index.html",
   "theme_color": "#555",
-  "background_color": "#ccc",
+  "background_color": "#fff",
   "display": "standalone",
   "scope": "/",
   "categories": ["sports"],
