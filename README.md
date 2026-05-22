@@ -1,40 +1,37 @@
-# scoreCounter 記分板
+# ScoreCounter 記分板
 
-- PWA(Progressive Web App) 2023.6.20 導入 Service Workers
-- 可以下載至裝置桌面作為 app 使用：[下載流程]
-
-- RWD畫面切版
-- 活用 input 客製隊伍名稱、顏色
-- JS 操作 DOM 呈現客製資料、動態比數變化
-- 使用 sessionStorage 紀錄比分
-
----
-
-The nicely, functional scoreboard mainly for mobile devices.
-
-[//]: # (<p>You are all very welcome to use webScoreBoard throw the link:<a href="https://chuanmin13.github.io/scoreCounter/scoreCounter-m.html">https://chuanmin13.github.io/scoreCounter/#/</a></p>)
+A functional scoreboard PWA for mobile devices. Customize teams, track scores, and record up to 5 sets — all without installing an app.
 
 <img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter.JPG?raw=true" width="500px"/> <img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter-2.JPG?raw=true" width="500px"/>
 
-### What can the webScoreBoard do:
+---
 
-- PWA(Progressive Web App)
-- Customize teams’ names and colors 
-- Add up and deduct scores
-- Keep records up to 5 sets
-- Keeping scores recorded even if you accidentally refreshed the webpage
+## Features
 
+- **PWA** — installable to home screen on iOS / Android
+- **Customize teams** — set names and colors per game
+- **Score tracking** — tap to add, minus button to deduct
+- **Set records** — save up to 5 sets of scores
+- **Session persistence** — accidental refresh won't lose your score
+- **Responsive** — portrait and landscape support
 
-Have fun with the webScoreBoard!
+---
 
-And let me know if you have any new function ideas willing to share^^
+## 功能
 
-
-### 記分板功能：
-- 自訂隊伍名稱及顏色 
-- 加減分數
-- 可保存至多五局的比數紀錄
+- 可安裝至桌面，作為 App 使用（PWA）
+- 自訂隊伍名稱及顏色
+- 點擊加分、減分按鈕扣分
+- 最多保存五局比數紀錄
 - 重整網頁不會導致目前比數消失
+- 支援直向 / 橫向版面
 
+---
 
-<img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter-3.JPG?raw=true" width="300px"/> <img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter-4.JPG?raw=true" width="300px" />
+## Tech
+
+- Vanilla JS, HTML, CSS — no framework, no build step
+- `sessionStorage` for score persistence
+- Service Worker ready (`sw.js`)
+
+<img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter-3.JPG?raw=true" width="300px"/> <img src="https://github.com/chuanmin13/scoreCounter/blob/main/img/scoreCounter-4.JPG?raw=true" width="300px"/>
